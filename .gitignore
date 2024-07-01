@@ -23,4 +23,3 @@ go.work.sum
 
 # Don't commit credentials!
 credentials.json
-token.json
