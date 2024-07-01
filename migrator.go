@@ -81,7 +81,7 @@ func makeServiceWithScopes(ctx context.Context, jsonkey []byte, scope ...string)
 func serveCode(w http.ResponseWriter, r *http.Request) {
 	code := r.URL.Query().Get("code")
 	codeChannel <- code
-	w.Write([]byte(fmt.Sprintf("<html><body><code>%s</code></body></html>", code)))
+	w.Write([]byte("You can now close this tab."))
 }
 
 func copyEvent(srv *calendar.Service, event *calendar.Event) bool {
